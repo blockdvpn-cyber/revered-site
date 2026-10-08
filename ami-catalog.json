@@ -1,0 +1,4 @@
+{"version":1,"models":[
+{"id":"qwen3-1.7b","name":"Qwen 3 · 1.7B","creator":"Qwen","distributor":"lmstudio-community","repository":"lmstudio-community/Qwen3-1.7B-GGUF","revision":"e5e31bf4d96de5da2ce124fa86673f0be7c82346","filename":"Qwen3-1.7B-Q4_K_M.gguf","bytes":1282439328,"sha256":"e0801cbda7e2f3fd00bea4d73b53b422b14b13aa130e778f6414b6b641920b7e","minimumMemoryGB":5,"licenseURL":"https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE","status":"Candidate; validate on this device"},
+{"id":"qwen3-4b","name":"Qwen 3 · 4B","creator":"Qwen","distributor":"Qwen","repository":"Qwen/Qwen3-4B-GGUF","revision":"bc640142c66e1fdd12af0bd68f40445458f3869b","filename":"Qwen3-4B-Q4_K_M.gguf","bytes":2497280256,"sha256":"7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5","minimumMemoryGB":12,"licenseURL":"https://huggingface.co/Qwen/Qwen3-4B-GGUF/blob/main/LICENSE","status":"Experimental; not yet benchmarked by AMI"}
+]}

@@ -1,0 +1,1569 @@
+{
+  "version": 3,
+  "checkedAt": "2026-10-05",
+  "models": [
+    {
+      "id": "qwen3-1.7b",
+      "name": "Qwen 3 \u00b7 1.7B",
+      "creator": "Qwen",
+      "distributor": "lmstudio-community",
+      "repository": "lmstudio-community/Qwen3-1.7B-GGUF",
+      "revision": "e5e31bf4d96de5da2ce124fa86673f0be7c82346",
+      "filename": "Qwen3-1.7B-Q4_K_M.gguf",
+      "bytes": 1282439328,
+      "sha256": "e0801cbda7e2f3fd00bea4d73b53b422b14b13aa130e778f6414b6b641920b7e",
+      "minimumMemoryGB": 5,
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE",
+      "status": "Candidate; validate on this device",
+      "family": "Qwen",
+      "license": "Apache 2.0",
+      "task": "Conversation",
+      "ami": true,
+      "validation": "Device-tested",
+      "description": "Local conversation and planning with AMI\u2019s Qwen adapter.",
+      "quantization": "Q4_K_M",
+      "sourceURL": "https://huggingface.co/lmstudio-community/Qwen3-1.7B-GGUF",
+      "downloadURL": "https://huggingface.co/lmstudio-community/Qwen3-1.7B-GGUF/resolve/e5e31bf4d96de5da2ce124fa86673f0be7c82346/Qwen3-1.7B-Q4_K_M.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "files": [
+        {
+          "filename": "Qwen3-1.7B-Q4_K_M.gguf",
+          "bytes": 1282439328,
+          "sha256": "e0801cbda7e2f3fd00bea4d73b53b422b14b13aa130e778f6414b6b641920b7e",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/lmstudio-community/Qwen3-1.7B-GGUF/resolve/e5e31bf4d96de5da2ce124fa86673f0be7c82346/Qwen3-1.7B-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 1282439328
+    },
+    {
+      "id": "qwen3-4b",
+      "name": "Qwen 3 \u00b7 4B",
+      "creator": "Qwen",
+      "distributor": "Qwen",
+      "repository": "Qwen/Qwen3-4B-GGUF",
+      "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+      "filename": "Qwen3-4B-Q4_K_M.gguf",
+      "bytes": 2497280256,
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "minimumMemoryGB": 12,
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/blob/main/LICENSE",
+      "status": "Experimental; not yet benchmarked by AMI",
+      "family": "Qwen",
+      "license": "Apache 2.0",
+      "task": "Conversation",
+      "ami": true,
+      "validation": "Experimental",
+      "description": "Local conversation and planning with AMI\u2019s Qwen adapter.",
+      "quantization": "Q4_K_M",
+      "sourceURL": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+      "downloadURL": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Laptop & desktop",
+      "files": [
+        {
+          "filename": "Qwen3-4B-Q4_K_M.gguf",
+          "bytes": 2497280256,
+          "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 2497280256
+    },
+    {
+      "id": "qwen3-8b",
+      "name": "Qwen 3 \u00b7 8B",
+      "creator": "Qwen",
+      "distributor": "Qwen",
+      "repository": "Qwen/Qwen3-8B-GGUF",
+      "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+      "filename": "Qwen3-8B-Q4_K_M.gguf",
+      "bytes": 5027783488,
+      "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+      "minimumMemoryGB": 16,
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3-8B-GGUF",
+      "license": "Apache 2.0",
+      "status": "Not tested in AMI",
+      "family": "Qwen",
+      "task": "Conversation",
+      "ami": false,
+      "validation": "Explore",
+      "description": "A larger Qwen option to explore on a capable laptop.",
+      "quantization": "Q4_K_M",
+      "sourceURL": "https://huggingface.co/Qwen/Qwen3-8B-GGUF",
+      "downloadURL": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/7c41481f57cb95916b40956ab2f0b139b296d974/Qwen3-8B-Q4_K_M.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Laptop & desktop",
+      "files": [
+        {
+          "filename": "Qwen3-8B-Q4_K_M.gguf",
+          "bytes": 5027783488,
+          "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/7c41481f57cb95916b40956ab2f0b139b296d974/Qwen3-8B-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 5027783488
+    },
+    {
+      "id": "qwen3-14b",
+      "name": "Qwen 3 \u00b7 14B",
+      "creator": "Qwen",
+      "distributor": "Qwen",
+      "repository": "Qwen/Qwen3-14B-GGUF",
+      "revision": "530227a7d994db8eca5ab5ced2fb692b614357fd",
+      "filename": "Qwen3-14B-Q4_K_M.gguf",
+      "bytes": 9001752960,
+      "sha256": "500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0",
+      "minimumMemoryGB": 24,
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3-14B-GGUF",
+      "license": "Apache 2.0",
+      "status": "Not tested in AMI",
+      "family": "Qwen",
+      "task": "Conversation",
+      "ami": false,
+      "validation": "Explore",
+      "description": "A larger local model for machines with more memory.",
+      "quantization": "Q4_K_M",
+      "sourceURL": "https://huggingface.co/Qwen/Qwen3-14B-GGUF",
+      "downloadURL": "https://huggingface.co/Qwen/Qwen3-14B-GGUF/resolve/530227a7d994db8eca5ab5ced2fb692b614357fd/Qwen3-14B-Q4_K_M.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Laptop & desktop",
+      "files": [
+        {
+          "filename": "Qwen3-14B-Q4_K_M.gguf",
+          "bytes": 9001752960,
+          "sha256": "500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/Qwen/Qwen3-14B-GGUF/resolve/530227a7d994db8eca5ab5ced2fb692b614357fd/Qwen3-14B-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 9001752960
+    },
+    {
+      "id": "llama3.2-1b",
+      "name": "Llama 3.2 \u00b7 1B",
+      "creator": "Meta",
+      "distributor": "bartowski",
+      "repository": "bartowski/Llama-3.2-1B-Instruct-GGUF",
+      "revision": "067b946cf014b7c697f3654f621d577a3e3afd1c",
+      "filename": "Llama-3.2-1B-Instruct-Q4_0.gguf",
+      "bytes": 773025920,
+      "sha256": "fa0390e7c043f89ae1847bd6682d748041a99d4ef3de0e0b27d33b6af97a8be8",
+      "minimumMemoryGB": 3,
+      "licenseURL": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF",
+      "license": "Llama 3.2",
+      "status": "Not tested in AMI",
+      "family": "Llama",
+      "task": "Conversation",
+      "ami": false,
+      "validation": "Explore",
+      "description": "Small instruction-tuned model; subject to Meta\u2019s license.",
+      "quantization": "Q4_0",
+      "sourceURL": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF",
+      "downloadURL": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/067b946cf014b7c697f3654f621d577a3e3afd1c/Llama-3.2-1B-Instruct-Q4_0.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "files": [
+        {
+          "filename": "Llama-3.2-1B-Instruct-Q4_0.gguf",
+          "bytes": 773025920,
+          "sha256": "fa0390e7c043f89ae1847bd6682d748041a99d4ef3de0e0b27d33b6af97a8be8",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF/resolve/067b946cf014b7c697f3654f621d577a3e3afd1c/Llama-3.2-1B-Instruct-Q4_0.gguf"
+        }
+      ],
+      "totalBytes": 773025920
+    },
+    {
+      "id": "llama3.2-3b",
+      "name": "Llama 3.2 \u00b7 3B",
+      "creator": "Meta",
+      "distributor": "bartowski",
+      "repository": "bartowski/Llama-3.2-3B-Instruct-GGUF",
+      "revision": "5ab33fa94d1d04e903623ae72c95d1696f09f9e8",
+      "filename": "Llama-3.2-3B-Instruct-Q4_0.gguf",
+      "bytes": 1921909280,
+      "sha256": "4d491003bf6b470e4d04233824c5c939b76d6c81974ba17a3ff207343e1d8e85",
+      "minimumMemoryGB": 6,
+      "licenseURL": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF",
+      "license": "Llama 3.2",
+      "status": "Not tested in AMI",
+      "family": "Llama",
+      "task": "Conversation",
+      "ami": false,
+      "validation": "Explore",
+      "description": "A compact multilingual assistant model from Meta.",
+      "quantization": "Q4_0",
+      "sourceURL": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF",
+      "downloadURL": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/5ab33fa94d1d04e903623ae72c95d1696f09f9e8/Llama-3.2-3B-Instruct-Q4_0.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "files": [
+        {
+          "filename": "Llama-3.2-3B-Instruct-Q4_0.gguf",
+          "bytes": 1921909280,
+          "sha256": "4d491003bf6b470e4d04233824c5c939b76d6c81974ba17a3ff207343e1d8e85",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/5ab33fa94d1d04e903623ae72c95d1696f09f9e8/Llama-3.2-3B-Instruct-Q4_0.gguf"
+        }
+      ],
+      "totalBytes": 1921909280
+    },
+    {
+      "id": "smollm2-1.7b",
+      "name": "SmolLM2 \u00b7 1.7B",
+      "creator": "Hugging Face",
+      "distributor": "bartowski",
+      "repository": "bartowski/SmolLM2-1.7B-Instruct-GGUF",
+      "revision": "1f03464768bfcc0319fc50da8ff5fb20b6417ba2",
+      "filename": "SmolLM2-1.7B-Instruct-Q4_0.gguf",
+      "bytes": 993874912,
+      "sha256": "99b866e77adee858930244229afa833dbe3372a7bf122905ea506119c6911ae8",
+      "minimumMemoryGB": 4,
+      "licenseURL": "https://huggingface.co/bartowski/SmolLM2-1.7B-Instruct-GGUF",
+      "license": "Apache 2.0",
+      "status": "Not tested in AMI",
+      "family": "SmolLM",
+      "task": "Conversation",
+      "ami": false,
+      "validation": "Explore",
+      "description": "A small instruction-tuned model from Hugging Face.",
+      "quantization": "Q4_0",
+      "sourceURL": "https://huggingface.co/bartowski/SmolLM2-1.7B-Instruct-GGUF",
+      "downloadURL": "https://huggingface.co/bartowski/SmolLM2-1.7B-Instruct-GGUF/resolve/1f03464768bfcc0319fc50da8ff5fb20b6417ba2/SmolLM2-1.7B-Instruct-Q4_0.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "files": [
+        {
+          "filename": "SmolLM2-1.7B-Instruct-Q4_0.gguf",
+          "bytes": 993874912,
+          "sha256": "99b866e77adee858930244229afa833dbe3372a7bf122905ea506119c6911ae8",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/bartowski/SmolLM2-1.7B-Instruct-GGUF/resolve/1f03464768bfcc0319fc50da8ff5fb20b6417ba2/SmolLM2-1.7B-Instruct-Q4_0.gguf"
+        }
+      ],
+      "totalBytes": 993874912
+    },
+    {
+      "id": "gemma3-1b",
+      "name": "Gemma 3 \u00b7 1B",
+      "creator": "Google",
+      "distributor": "ggml-org",
+      "repository": "ggml-org/gemma-3-1b-it-GGUF",
+      "revision": "f9c28bcd85737ffc5aef028638d3341d49869c27",
+      "filename": "gemma-3-1b-it-Q4_K_M.gguf",
+      "bytes": 806058240,
+      "sha256": "8ccc5cd1f1b3602548715ae25a66ed73fd5dc68a210412eea643eb20eb75a135",
+      "minimumMemoryGB": 3,
+      "licenseURL": "https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF",
+      "license": "Gemma",
+      "status": "Not tested in AMI",
+      "family": "Gemma",
+      "task": "Conversation",
+      "ami": false,
+      "validation": "Explore",
+      "description": "Text-only Gemma model with Google\u2019s usage terms.",
+      "quantization": "Q4_K_M",
+      "sourceURL": "https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF",
+      "downloadURL": "https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF/resolve/f9c28bcd85737ffc5aef028638d3341d49869c27/gemma-3-1b-it-Q4_K_M.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "files": [
+        {
+          "filename": "gemma-3-1b-it-Q4_K_M.gguf",
+          "bytes": 806058240,
+          "sha256": "8ccc5cd1f1b3602548715ae25a66ed73fd5dc68a210412eea643eb20eb75a135",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF/resolve/f9c28bcd85737ffc5aef028638d3341d49869c27/gemma-3-1b-it-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 806058240
+    },
+    {
+      "id": "phi4-mini",
+      "name": "Phi-4 mini \u00b7 3.8B",
+      "creator": "Microsoft",
+      "distributor": "bartowski",
+      "repository": "bartowski/microsoft_Phi-4-mini-instruct-GGUF",
+      "revision": "7ff82c2aaa4dde30121698a973765f39be5288c0",
+      "filename": "microsoft_Phi-4-mini-instruct-Q4_0.gguf",
+      "bytes": 2331442560,
+      "sha256": "2124412a2d3410dd05c5d01796457283812210633165a2a86c909f815971518e",
+      "minimumMemoryGB": 8,
+      "licenseURL": "https://huggingface.co/bartowski/microsoft_Phi-4-mini-instruct-GGUF",
+      "license": "MIT",
+      "status": "Not tested in AMI",
+      "family": "Phi",
+      "task": "Conversation",
+      "ami": false,
+      "validation": "Explore",
+      "description": "A compact instruction model to evaluate for local work.",
+      "quantization": "Q4_0",
+      "sourceURL": "https://huggingface.co/bartowski/microsoft_Phi-4-mini-instruct-GGUF",
+      "downloadURL": "https://huggingface.co/bartowski/microsoft_Phi-4-mini-instruct-GGUF/resolve/7ff82c2aaa4dde30121698a973765f39be5288c0/microsoft_Phi-4-mini-instruct-Q4_0.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Laptop & desktop",
+      "files": [
+        {
+          "filename": "microsoft_Phi-4-mini-instruct-Q4_0.gguf",
+          "bytes": 2331442560,
+          "sha256": "2124412a2d3410dd05c5d01796457283812210633165a2a86c909f815971518e",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/bartowski/microsoft_Phi-4-mini-instruct-GGUF/resolve/7ff82c2aaa4dde30121698a973765f39be5288c0/microsoft_Phi-4-mini-instruct-Q4_0.gguf"
+        }
+      ],
+      "totalBytes": 2331442560
+    },
+    {
+      "id": "qwen3-0.6b",
+      "name": "Qwen 3 \u00b7 0.6B",
+      "creator": "Qwen",
+      "distributor": "lmstudio-community",
+      "repository": "lmstudio-community/Qwen3-0.6B-GGUF",
+      "revision": "3334d820ab76652cf6e242d7c6302b10f0951f23",
+      "filename": "Qwen3-0.6B-Q4_K_M.gguf",
+      "bytes": 484219808,
+      "sha256": "cd47557a67d7e8f2891d98b5e1dbf2988544569fdf4f1bdb30e92b71aa61b548",
+      "minimumMemoryGB": 3,
+      "licenseURL": "https://huggingface.co/lmstudio-community/Qwen3-0.6B-GGUF",
+      "license": "Apache 2.0",
+      "status": "Not tested in AMI",
+      "family": "Qwen",
+      "task": "Conversation",
+      "ami": false,
+      "validation": "Explore",
+      "description": "A compact starting point for constrained devices.",
+      "quantization": "Q4_K_M",
+      "sourceURL": "https://huggingface.co/lmstudio-community/Qwen3-0.6B-GGUF",
+      "downloadURL": "https://huggingface.co/lmstudio-community/Qwen3-0.6B-GGUF/resolve/3334d820ab76652cf6e242d7c6302b10f0951f23/Qwen3-0.6B-Q4_K_M.gguf",
+      "tasks": [
+        "Conversation"
+      ],
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "files": [
+        {
+          "filename": "Qwen3-0.6B-Q4_K_M.gguf",
+          "bytes": 484219808,
+          "sha256": "cd47557a67d7e8f2891d98b5e1dbf2988544569fdf4f1bdb30e92b71aa61b548",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/lmstudio-community/Qwen3-0.6B-GGUF/resolve/3334d820ab76652cf6e242d7c6302b10f0951f23/Qwen3-0.6B-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 484219808
+    },
+    {
+      "id": "smollm3-3b",
+      "name": "SmolLM3 \u00b7 3B",
+      "creator": "Hugging Face",
+      "family": "SmolLM",
+      "distributor": "ggml-org",
+      "repository": "ggml-org/SmolLM3-3B-GGUF",
+      "revision": "4965cb60b150737b68a0408c36aeefb65078f894",
+      "filename": "SmolLM3-Q4_K_M.gguf",
+      "bytes": 1915305312,
+      "sha256": "8334b850b7bd46238c16b0c550df2138f0889bf433809008cc17a8b05761863e",
+      "minimumMemoryGB": 6,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "upstreamURL": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+      "sourceURL": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF",
+      "downloadURL": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/resolve/4965cb60b150737b68a0408c36aeefb65078f894/SmolLM3-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "SmolLM3-Q4_K_M.gguf",
+          "bytes": 1915305312,
+          "sha256": "8334b850b7bd46238c16b0c550df2138f0889bf433809008cc17a8b05761863e",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/resolve/4965cb60b150737b68a0408c36aeefb65078f894/SmolLM3-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 1915305312,
+      "task": "Conversation",
+      "tasks": [
+        "Conversation",
+        "Reasoning"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Compact multilingual model with optional reasoning. Evaluate response length and latency on your device.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "lfm2.5-1.2b",
+      "name": "LFM 2.5 \u00b7 1.2B",
+      "creator": "Liquid AI",
+      "family": "LFM",
+      "distributor": "LiquidAI",
+      "repository": "LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "revision": "8ed288026e23958ad9dfa92d53ed773a8eee7125",
+      "filename": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+      "bytes": 730895168,
+      "sha256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5",
+      "minimumMemoryGB": 3,
+      "license": "LFM Open License 1.0",
+      "licenseURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+      "upstreamURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+      "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+      "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/8ed288026e23958ad9dfa92d53ed773a8eee7125/LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+          "bytes": 730895168,
+          "sha256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/8ed288026e23958ad9dfa92d53ed773a8eee7125/LFM2.5-1.2B-Instruct-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 730895168,
+      "task": "Conversation",
+      "tasks": [
+        "Conversation",
+        "Tool use"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Small on-device candidate for tool use, extraction, and retrieval. Publisher does not recommend it for programming or knowledge-heavy tasks.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "qwen3.5-0.8b",
+      "name": "Qwen 3.5 \u00b7 0.8B",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "unsloth",
+      "repository": "unsloth/Qwen3.5-0.8B-GGUF",
+      "revision": "6ab461498e2023f6e3c1baea90a8f0fe38ab64d0",
+      "filename": "Qwen3.5-0.8B-Q4_K_M.gguf",
+      "bytes": 532517120,
+      "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+      "minimumMemoryGB": 4,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "sourceURL": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF",
+      "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/6ab461498e2023f6e3c1baea90a8f0fe38ab64d0/Qwen3.5-0.8B-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "Qwen3.5-0.8B-Q4_K_M.gguf",
+          "bytes": 532517120,
+          "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/6ab461498e2023f6e3c1baea90a8f0fe38ab64d0/Qwen3.5-0.8B-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-F16.gguf",
+          "bytes": 204987232,
+          "sha256": "56e4c6cfe73b0c82e3e82bc518d7591997e61d81f723fc41a586f4fa69ea2453",
+          "role": "Vision projector",
+          "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/6ab461498e2023f6e3c1baea90a8f0fe38ab64d0/mmproj-F16.gguf"
+        }
+      ],
+      "totalBytes": 737504352,
+      "task": "Conversation",
+      "tasks": [
+        "Conversation",
+        "Vision"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Text and image understanding candidate. Images require the separate vision projector and a compatible multimodal runtime.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "qwen3.5-2b",
+      "name": "Qwen 3.5 \u00b7 2B",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "unsloth",
+      "repository": "unsloth/Qwen3.5-2B-GGUF",
+      "revision": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
+      "filename": "Qwen3.5-2B-Q4_K_M.gguf",
+      "bytes": 1280835840,
+      "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223",
+      "minimumMemoryGB": 6,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "sourceURL": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF",
+      "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/f6d5376be1edb4d416d56da11e5397a961aca8ae/Qwen3.5-2B-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "Qwen3.5-2B-Q4_K_M.gguf",
+          "bytes": 1280835840,
+          "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/f6d5376be1edb4d416d56da11e5397a961aca8ae/Qwen3.5-2B-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-F16.gguf",
+          "bytes": 668227264,
+          "sha256": "7035e9cb8d7c6a9681d07eef9a364783e86ea4cd73faab2eabb4f43a101830c7",
+          "role": "Vision projector",
+          "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/f6d5376be1edb4d416d56da11e5397a961aca8ae/mmproj-F16.gguf"
+        }
+      ],
+      "totalBytes": 1949063104,
+      "task": "Conversation",
+      "tasks": [
+        "Conversation",
+        "Vision"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Text and image understanding candidate. Images require the separate vision projector and a compatible multimodal runtime.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "qwen3.5-4b",
+      "name": "Qwen 3.5 \u00b7 4B",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "unsloth",
+      "repository": "unsloth/Qwen3.5-4B-GGUF",
+      "revision": "e87f176479d0855a907a41277aca2f8ee7a09523",
+      "filename": "Qwen3.5-4B-Q4_K_M.gguf",
+      "bytes": 2740937888,
+      "sha256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+      "minimumMemoryGB": 12,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "sourceURL": "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF",
+      "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/e87f176479d0855a907a41277aca2f8ee7a09523/Qwen3.5-4B-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "Qwen3.5-4B-Q4_K_M.gguf",
+          "bytes": 2740937888,
+          "sha256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/e87f176479d0855a907a41277aca2f8ee7a09523/Qwen3.5-4B-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-F16.gguf",
+          "bytes": 672423616,
+          "sha256": "cd88edcf8d031894960bb0c9c5b9b7e1fea6ebee02b9f7ce925a00d12891f864",
+          "role": "Vision projector",
+          "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/e87f176479d0855a907a41277aca2f8ee7a09523/mmproj-F16.gguf"
+        }
+      ],
+      "totalBytes": 3413361504,
+      "task": "Conversation",
+      "tasks": [
+        "Conversation",
+        "Vision"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Text and image understanding candidate. Images require the separate vision projector and a compatible multimodal runtime.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "qwen3.5-9b",
+      "name": "Qwen 3.5 \u00b7 9B",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "unsloth",
+      "repository": "unsloth/Qwen3.5-9B-GGUF",
+      "revision": "3885219b6810b007914f3a7950a8d1b469d598a5",
+      "filename": "Qwen3.5-9B-Q4_K_M.gguf",
+      "bytes": 5680522464,
+      "sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+      "minimumMemoryGB": 16,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "sourceURL": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF",
+      "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/3885219b6810b007914f3a7950a8d1b469d598a5/Qwen3.5-9B-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "Qwen3.5-9B-Q4_K_M.gguf",
+          "bytes": 5680522464,
+          "sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/3885219b6810b007914f3a7950a8d1b469d598a5/Qwen3.5-9B-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-F16.gguf",
+          "bytes": 918166080,
+          "sha256": "f70dc3509053962b0d0d3ee8a7eacebf5d60aa560cad78254ae8698516ae029f",
+          "role": "Vision projector",
+          "downloadURL": "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/3885219b6810b007914f3a7950a8d1b469d598a5/mmproj-F16.gguf"
+        }
+      ],
+      "totalBytes": 6598688544,
+      "task": "Conversation",
+      "tasks": [
+        "Conversation",
+        "Vision"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Text and image understanding candidate. Images require the separate vision projector and a compatible multimodal runtime.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "qwen2.5-coder-1.5b",
+      "name": "Qwen 2.5 Coder \u00b7 1.5B",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "Qwen",
+      "repository": "Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+      "revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+      "filename": "qwen2.5-coder-1.5b-instruct-q4_k_m.gguf",
+      "bytes": 1117320768,
+      "sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+      "minimumMemoryGB": 4,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct",
+      "sourceURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+      "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF/resolve/f86cb2c1fa58255f8052cc32aeede1b7482d4361/qwen2.5-coder-1.5b-instruct-q4_k_m.gguf",
+      "files": [
+        {
+          "filename": "qwen2.5-coder-1.5b-instruct-q4_k_m.gguf",
+          "bytes": 1117320768,
+          "sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF/resolve/f86cb2c1fa58255f8052cc32aeede1b7482d4361/qwen2.5-coder-1.5b-instruct-q4_k_m.gguf"
+        }
+      ],
+      "totalBytes": 1117320768,
+      "task": "Coding",
+      "tasks": [
+        "Coding"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Compact code-oriented instruction model for experimenting with local coding assistance.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "qwen2.5-coder-7b",
+      "name": "Qwen 2.5 Coder \u00b7 7B",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "Qwen",
+      "repository": "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+      "revision": "13fb94bfda8c8cf22497dc57b78f391a9acb426a",
+      "filename": "qwen2.5-coder-7b-instruct-q4_k_m.gguf",
+      "bytes": 4683073536,
+      "sha256": "509287f78cb4d4cf6b3843734733b914b2c158e43e22a7f4bf5e963800894d3c",
+      "minimumMemoryGB": 12,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "sourceURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+      "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/13fb94bfda8c8cf22497dc57b78f391a9acb426a/qwen2.5-coder-7b-instruct-q4_k_m.gguf",
+      "files": [
+        {
+          "filename": "qwen2.5-coder-7b-instruct-q4_k_m.gguf",
+          "bytes": 4683073536,
+          "sha256": "509287f78cb4d4cf6b3843734733b914b2c158e43e22a7f4bf5e963800894d3c",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF/resolve/13fb94bfda8c8cf22497dc57b78f391a9acb426a/qwen2.5-coder-7b-instruct-q4_k_m.gguf"
+        }
+      ],
+      "totalBytes": 4683073536,
+      "task": "Coding",
+      "tasks": [
+        "Coding"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Larger coding model to evaluate on laptops. Includes one complete GGUF rather than split download shards.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "qwen3-4b-instruct-2507",
+      "name": "Qwen 3 \u00b7 4B Instruct 2507",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "lmstudio-community",
+      "repository": "lmstudio-community/Qwen3-4B-Instruct-2507-GGUF",
+      "revision": "4edb920b6f14e3b9284d4502a6485103d72cde05",
+      "filename": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "bytes": 2497280448,
+      "sha256": "8cdb57cbb880d313736a9bc4e3d3d2485f145b5e19cf33783746e753e82641fc",
+      "minimumMemoryGB": 8,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "sourceURL": "https://huggingface.co/lmstudio-community/Qwen3-4B-Instruct-2507-GGUF",
+      "downloadURL": "https://huggingface.co/lmstudio-community/Qwen3-4B-Instruct-2507-GGUF/resolve/4edb920b6f14e3b9284d4502a6485103d72cde05/Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+          "bytes": 2497280448,
+          "sha256": "8cdb57cbb880d313736a9bc4e3d3d2485f145b5e19cf33783746e753e82641fc",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/lmstudio-community/Qwen3-4B-Instruct-2507-GGUF/resolve/4edb920b6f14e3b9284d4502a6485103d72cde05/Qwen3-4B-Instruct-2507-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 2497280448,
+      "task": "Conversation",
+      "tasks": [
+        "Conversation"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Non-thinking instruction variant for direct answers. A separate candidate from AMI\u2019s current Qwen 3 4B.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "qwen3-4b-thinking-2507",
+      "name": "Qwen 3 \u00b7 4B Thinking 2507",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "lmstudio-community",
+      "repository": "lmstudio-community/Qwen3-4B-Thinking-2507-GGUF",
+      "revision": "0252537265b088d8c6f681066e1d4c2f415d090b",
+      "filename": "Qwen3-4B-Thinking-2507-Q4_K_M.gguf",
+      "bytes": 2497280448,
+      "sha256": "899e910ac7d04373bedca3779f8a1d7330e1988f332b6bb7bbef9dec703455be",
+      "minimumMemoryGB": 12,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507",
+      "sourceURL": "https://huggingface.co/lmstudio-community/Qwen3-4B-Thinking-2507-GGUF",
+      "downloadURL": "https://huggingface.co/lmstudio-community/Qwen3-4B-Thinking-2507-GGUF/resolve/0252537265b088d8c6f681066e1d4c2f415d090b/Qwen3-4B-Thinking-2507-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "Qwen3-4B-Thinking-2507-Q4_K_M.gguf",
+          "bytes": 2497280448,
+          "sha256": "899e910ac7d04373bedca3779f8a1d7330e1988f332b6bb7bbef9dec703455be",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/lmstudio-community/Qwen3-4B-Thinking-2507-GGUF/resolve/0252537265b088d8c6f681066e1d4c2f415d090b/Qwen3-4B-Thinking-2507-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 2497280448,
+      "task": "Reasoning",
+      "tasks": [
+        "Reasoning"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Reasoning-focused variant. Longer thinking can mean slower replies and greater context-memory use.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "deepseek-r1-qwen-7b",
+      "name": "DeepSeek R1 \u00b7 Qwen 7B",
+      "creator": "DeepSeek",
+      "family": "DeepSeek",
+      "distributor": "bartowski",
+      "repository": "bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF",
+      "revision": "361004151d4f4f6b446dc5e6d46fbf4422a80d5f",
+      "filename": "DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf",
+      "bytes": 4683073504,
+      "sha256": "731ece8d06dc7eda6f6572997feb9ee1258db0784827e642909d9b565641937b",
+      "minimumMemoryGB": 12,
+      "license": "MIT",
+      "licenseURL": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "upstreamURL": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+      "sourceURL": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF",
+      "downloadURL": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/361004151d4f4f6b446dc5e6d46fbf4422a80d5f/DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf",
+          "bytes": 4683073504,
+          "sha256": "731ece8d06dc7eda6f6572997feb9ee1258db0784827e642909d9b565641937b",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-7B-GGUF/resolve/361004151d4f4f6b446dc5e6d46fbf4422a80d5f/DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 4683073504,
+      "task": "Reasoning",
+      "tasks": [
+        "Reasoning"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Reasoning distilled into a Qwen-based model. Evaluate on bounded problems; reasoning traces can be lengthy.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "granite3.3-2b",
+      "name": "Granite 3.3 \u00b7 2B",
+      "creator": "IBM",
+      "family": "Granite",
+      "distributor": "ibm-granite",
+      "repository": "ibm-granite/granite-3.3-2b-instruct-GGUF",
+      "revision": "7cdf86ccd1f1bb3491c9b7017b033f2e51367397",
+      "filename": "granite-3.3-2b-instruct-Q4_K_M.gguf",
+      "bytes": 1545303328,
+      "sha256": "ac71e9e32c0bea919b409c5918f69ca74339854b0319c5065e4e9fb6d95c4852",
+      "minimumMemoryGB": 6,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct",
+      "upstreamURL": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct",
+      "sourceURL": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF",
+      "downloadURL": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/resolve/7cdf86ccd1f1bb3491c9b7017b033f2e51367397/granite-3.3-2b-instruct-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "granite-3.3-2b-instruct-Q4_K_M.gguf",
+          "bytes": 1545303328,
+          "sha256": "ac71e9e32c0bea919b409c5918f69ca74339854b0319c5065e4e9fb6d95c4852",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/ibm-granite/granite-3.3-2b-instruct-GGUF/resolve/7cdf86ccd1f1bb3491c9b7017b033f2e51367397/granite-3.3-2b-instruct-Q4_K_M.gguf"
+        }
+      ],
+      "totalBytes": 1545303328,
+      "task": "Conversation",
+      "tasks": [
+        "Conversation",
+        "Tool use"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Compact instruction model for structured tasks and tool-calling experiments. Tool execution still requires an application.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "gemma3-4b",
+      "name": "Gemma 3 \u00b7 4B",
+      "creator": "Google",
+      "family": "Gemma",
+      "distributor": "ggml-org",
+      "repository": "ggml-org/gemma-3-4b-it-GGUF",
+      "revision": "d0976223747697cb51e056d85c532013931fe52e",
+      "filename": "gemma-3-4b-it-Q4_K_M.gguf",
+      "bytes": 2489757856,
+      "sha256": "882e8d2db44dc554fb0ea5077cb7e4bc49e7342a1f0da57901c0802ea21a0863",
+      "minimumMemoryGB": 12,
+      "license": "Gemma",
+      "licenseURL": "https://huggingface.co/google/gemma-3-4b-it",
+      "upstreamURL": "https://huggingface.co/google/gemma-3-4b-it",
+      "sourceURL": "https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF",
+      "downloadURL": "https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF/resolve/d0976223747697cb51e056d85c532013931fe52e/gemma-3-4b-it-Q4_K_M.gguf",
+      "files": [
+        {
+          "filename": "gemma-3-4b-it-Q4_K_M.gguf",
+          "bytes": 2489757856,
+          "sha256": "882e8d2db44dc554fb0ea5077cb7e4bc49e7342a1f0da57901c0802ea21a0863",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF/resolve/d0976223747697cb51e056d85c532013931fe52e/gemma-3-4b-it-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-model-f16.gguf",
+          "bytes": 851251104,
+          "sha256": "8c0fb064b019a6972856aaae2c7e4792858af3ca4561be2dbf649123ba6c40cb",
+          "role": "Vision projector",
+          "downloadURL": "https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF/resolve/d0976223747697cb51e056d85c532013931fe52e/mmproj-model-f16.gguf"
+        }
+      ],
+      "totalBytes": 3341008960,
+      "task": "Conversation",
+      "tasks": [
+        "Conversation",
+        "Vision"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Text and image model under Google\u2019s Gemma terms. Vision requires the companion projector.",
+      "quantization": "Q4_K_M",
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "smolvlm2-500m",
+      "name": "SmolVLM2 \u00b7 500M",
+      "creator": "Hugging Face",
+      "family": "SmolVLM",
+      "distributor": "ggml-org",
+      "repository": "ggml-org/SmolVLM2-500M-Video-Instruct-GGUF",
+      "revision": "ccd7aae53bcb1997355c2f094959e72b3642ce17",
+      "filename": "SmolVLM2-500M-Video-Instruct-Q8_0.gguf",
+      "bytes": 436808704,
+      "sha256": "6f67b8036b2469fcd71728702720c6b51aebd759b78137a8120733b4d66438bc",
+      "minimumMemoryGB": 3,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+      "upstreamURL": "https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+      "sourceURL": "https://huggingface.co/ggml-org/SmolVLM2-500M-Video-Instruct-GGUF",
+      "downloadURL": "https://huggingface.co/ggml-org/SmolVLM2-500M-Video-Instruct-GGUF/resolve/ccd7aae53bcb1997355c2f094959e72b3642ce17/SmolVLM2-500M-Video-Instruct-Q8_0.gguf",
+      "files": [
+        {
+          "filename": "SmolVLM2-500M-Video-Instruct-Q8_0.gguf",
+          "bytes": 436808704,
+          "sha256": "6f67b8036b2469fcd71728702720c6b51aebd759b78137a8120733b4d66438bc",
+          "role": "Model weights",
+          "downloadURL": "https://huggingface.co/ggml-org/SmolVLM2-500M-Video-Instruct-GGUF/resolve/ccd7aae53bcb1997355c2f094959e72b3642ce17/SmolVLM2-500M-Video-Instruct-Q8_0.gguf"
+        },
+        {
+          "filename": "mmproj-SmolVLM2-500M-Video-Instruct-f16.gguf",
+          "bytes": 199470624,
+          "sha256": "b5dc8ebe7cbeab66a5369693960a52515d7824f13d4063ceca78431f2a6b59b0",
+          "role": "Vision projector",
+          "downloadURL": "https://huggingface.co/ggml-org/SmolVLM2-500M-Video-Instruct-GGUF/resolve/ccd7aae53bcb1997355c2f094959e72b3642ce17/mmproj-SmolVLM2-500M-Video-Instruct-f16.gguf"
+        }
+      ],
+      "totalBytes": 636279328,
+      "task": "Vision",
+      "tasks": [
+        "Vision"
+      ],
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Small image and video understanding candidate. Requires both files and a runtime supporting its visual input pipeline.",
+      "quantization": "Q8_0",
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-04",
+      "format": "GGUF",
+      "runtimeNotes": "Requires a compatible runtime and the model\u2019s chat template. AMI compatibility is listed separately.",
+      "repositoryBundle": false
+    },
+    {
+      "id": "smolvlm-256m",
+      "name": "SmolVLM \u00b7 256M",
+      "repository": "ggml-org/SmolVLM-256M-Instruct-GGUF",
+      "creator": "Hugging Face",
+      "family": "SmolVLM",
+      "distributor": "ggml-org",
+      "revision": "b9e4379657e1450d04d02eec8e345667265b0a00",
+      "filename": "SmolVLM-256M-Instruct-Q8_0.gguf",
+      "bytes": 175054528,
+      "sha256": "2a31195d3769c0b0fd0a4906201666108834848db768af11de1d2cef7cd35e65",
+      "files": [
+        {
+          "filename": "SmolVLM-256M-Instruct-Q8_0.gguf",
+          "role": "Model weights",
+          "bytes": 175054528,
+          "sha256": "2a31195d3769c0b0fd0a4906201666108834848db768af11de1d2cef7cd35e65",
+          "downloadURL": "https://huggingface.co/ggml-org/SmolVLM-256M-Instruct-GGUF/resolve/b9e4379657e1450d04d02eec8e345667265b0a00/SmolVLM-256M-Instruct-Q8_0.gguf"
+        },
+        {
+          "filename": "mmproj-SmolVLM-256M-Instruct-f16.gguf",
+          "role": "Vision projector",
+          "bytes": 190031616,
+          "sha256": "0802360aca1748f112ea510b8ff277c65b1361c8ef30ed89b83c9c7a60d08e96",
+          "downloadURL": "https://huggingface.co/ggml-org/SmolVLM-256M-Instruct-GGUF/resolve/b9e4379657e1450d04d02eec8e345667265b0a00/mmproj-SmolVLM-256M-Instruct-f16.gguf"
+        }
+      ],
+      "totalBytes": 365086144,
+      "minimumMemoryGB": 3,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct",
+      "upstreamURL": "https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct",
+      "tasks": [
+        "Vision"
+      ],
+      "task": "Vision",
+      "format": "GGUF",
+      "quantization": "Q8_0",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Tiny image-understanding candidate for constrained devices. Does not listen or generate speech.",
+      "runtimeNotes": "Requires a compatible multimodal llama.cpp runtime plus the listed vision projector. No iPhone benchmark yet.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/ggml-org/SmolVLM-256M-Instruct-GGUF",
+      "downloadURL": "https://huggingface.co/ggml-org/SmolVLM-256M-Instruct-GGUF/resolve/b9e4379657e1450d04d02eec8e345667265b0a00/SmolVLM-256M-Instruct-Q8_0.gguf"
+    },
+    {
+      "id": "smolvlm2-2.2b",
+      "name": "SmolVLM2 \u00b7 2.2B",
+      "repository": "ggml-org/SmolVLM2-2.2B-Instruct-GGUF",
+      "creator": "Hugging Face",
+      "family": "SmolVLM",
+      "distributor": "ggml-org",
+      "revision": "1bc3c9f74ceafd4c8d4411cc9cf188bba3798f91",
+      "filename": "SmolVLM2-2.2B-Instruct-Q4_K_M.gguf",
+      "bytes": 1112602656,
+      "sha256": "0cf76814555b8665149075b74ab6b5c1d428ea1d3d01c1918c12012e8d7c9f58",
+      "files": [
+        {
+          "filename": "SmolVLM2-2.2B-Instruct-Q4_K_M.gguf",
+          "role": "Model weights",
+          "bytes": 1112602656,
+          "sha256": "0cf76814555b8665149075b74ab6b5c1d428ea1d3d01c1918c12012e8d7c9f58",
+          "downloadURL": "https://huggingface.co/ggml-org/SmolVLM2-2.2B-Instruct-GGUF/resolve/1bc3c9f74ceafd4c8d4411cc9cf188bba3798f91/SmolVLM2-2.2B-Instruct-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-SmolVLM2-2.2B-Instruct-f16.gguf",
+          "role": "Vision projector",
+          "bytes": 872303680,
+          "sha256": "db9a3a1648cab1ebc3af4a2b0c8145dd8faebf6f7dd7b16e7dc1842229f14ac4",
+          "downloadURL": "https://huggingface.co/ggml-org/SmolVLM2-2.2B-Instruct-GGUF/resolve/1bc3c9f74ceafd4c8d4411cc9cf188bba3798f91/mmproj-SmolVLM2-2.2B-Instruct-f16.gguf"
+        }
+      ],
+      "totalBytes": 1984906336,
+      "minimumMemoryGB": 6,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "upstreamURL": "https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "tasks": [
+        "Vision"
+      ],
+      "task": "Vision",
+      "format": "GGUF",
+      "quantization": "Q4_K_M",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Image and video understanding; a larger visual companion to the existing 500M option.",
+      "runtimeNotes": "Video frame handling and image encoding require multimodal runtime support. Listing is not a live-camera integration.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/ggml-org/SmolVLM2-2.2B-Instruct-GGUF",
+      "downloadURL": "https://huggingface.co/ggml-org/SmolVLM2-2.2B-Instruct-GGUF/resolve/1bc3c9f74ceafd4c8d4411cc9cf188bba3798f91/SmolVLM2-2.2B-Instruct-Q4_K_M.gguf"
+    },
+    {
+      "id": "lfm2.5-vl-1.6b",
+      "name": "LFM 2.5 VL \u00b7 1.6B",
+      "repository": "LiquidAI/LFM2.5-VL-1.6B-GGUF",
+      "creator": "Liquid AI",
+      "family": "LFM",
+      "distributor": "LiquidAI",
+      "revision": "36fc16bc95133424921bcc3da009e83b2f23ffb5",
+      "filename": "LFM2.5-VL-1.6B-Q4_K_M.gguf",
+      "bytes": 730896256,
+      "sha256": "aefc3c97c9eb30d9c0dd6af4c38250f5f5106b57c8cf92de7914c7d0a9c94da2",
+      "files": [
+        {
+          "filename": "LFM2.5-VL-1.6B-Q4_K_M.gguf",
+          "role": "Model weights",
+          "bytes": 730896256,
+          "sha256": "aefc3c97c9eb30d9c0dd6af4c38250f5f5106b57c8cf92de7914c7d0a9c94da2",
+          "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/36fc16bc95133424921bcc3da009e83b2f23ffb5/LFM2.5-VL-1.6B-Q4_K_M.gguf"
+        },
+        {
+          "filename": "mmproj-LFM2.5-VL-1.6b-F16.gguf",
+          "role": "Vision projector",
+          "bytes": 853993856,
+          "sha256": "2cddba98b98390c011c606c416de2e63dcfdd3b21452bf71ad6aab59fa52d2ee",
+          "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/36fc16bc95133424921bcc3da009e83b2f23ffb5/mmproj-LFM2.5-VL-1.6b-F16.gguf"
+        }
+      ],
+      "totalBytes": 1584890112,
+      "minimumMemoryGB": 6,
+      "license": "LFM Open License 1.0",
+      "licenseURL": "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B",
+      "upstreamURL": "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B",
+      "tasks": [
+        "Vision"
+      ],
+      "task": "Vision",
+      "format": "GGUF",
+      "quantization": "Q4_K_M",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Compact visual-language model for image questions and document understanding. Custom license.",
+      "runtimeNotes": "Requires LFM2 vision architecture support and the companion projector; not interchangeable with AMI\u2019s Qwen adapter.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF",
+      "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF/resolve/36fc16bc95133424921bcc3da009e83b2f23ffb5/LFM2.5-VL-1.6B-Q4_K_M.gguf"
+    },
+    {
+      "id": "lfm2.5-audio-1.5b",
+      "name": "LFM 2.5 Audio \u00b7 1.5B",
+      "repository": "LiquidAI/LFM2.5-Audio-1.5B-GGUF",
+      "creator": "Liquid AI",
+      "family": "LFM",
+      "distributor": "LiquidAI",
+      "revision": "7d525f883a077e20afb782f2ff618edcae0e39e4",
+      "filename": "LFM2.5-Audio-1.5B-Q4_0.gguf",
+      "bytes": 695750880,
+      "sha256": "3583bee853be20331ca342b0593fefd8acc43fb61a41ec6f1a1dc7465823e0d8",
+      "files": [
+        {
+          "filename": "LFM2.5-Audio-1.5B-Q4_0.gguf",
+          "role": "Model weights",
+          "bytes": 695750880,
+          "sha256": "3583bee853be20331ca342b0593fefd8acc43fb61a41ec6f1a1dc7465823e0d8",
+          "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-GGUF/resolve/7d525f883a077e20afb782f2ff618edcae0e39e4/LFM2.5-Audio-1.5B-Q4_0.gguf"
+        },
+        {
+          "filename": "mmproj-LFM2.5-Audio-1.5B-Q4_0.gguf",
+          "role": "Audio encoder",
+          "bytes": 219511136,
+          "sha256": "6b483682c263b100f8cc8022d61507e446b1d320b9febc328e7960f72d03f7ea",
+          "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-GGUF/resolve/7d525f883a077e20afb782f2ff618edcae0e39e4/mmproj-LFM2.5-Audio-1.5B-Q4_0.gguf"
+        },
+        {
+          "filename": "tokenizer-LFM2.5-Audio-1.5B-Q4_0.gguf",
+          "role": "Audio tokenizer",
+          "bytes": 50546112,
+          "sha256": "01ec6afe4578bb1e02a4d43d87e7e5827d6b3d94d2d36912ee931b9c3050f1c1",
+          "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-GGUF/resolve/7d525f883a077e20afb782f2ff618edcae0e39e4/tokenizer-LFM2.5-Audio-1.5B-Q4_0.gguf"
+        },
+        {
+          "filename": "vocoder-LFM2.5-Audio-1.5B-Q4_0.gguf",
+          "role": "Vocoder",
+          "bytes": 108986560,
+          "sha256": "423cfcb054f41b69a5706226c243abc96d2531c3aff1121f7a2ed17149b79c95",
+          "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-GGUF/resolve/7d525f883a077e20afb782f2ff618edcae0e39e4/vocoder-LFM2.5-Audio-1.5B-Q4_0.gguf"
+        }
+      ],
+      "totalBytes": 1074794688,
+      "minimumMemoryGB": 6,
+      "license": "LFM Open License 1.0",
+      "licenseURL": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B",
+      "upstreamURL": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B",
+      "tasks": [
+        "Speech conversation"
+      ],
+      "task": "Speech conversation",
+      "format": "GGUF",
+      "quantization": "Q4_0",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "End-to-end speech-and-text model with an interleaved spoken-response mode. All four components are listed.",
+      "runtimeNotes": "Requires Liquid AI\u2019s dedicated llama-liquid-audio runner. A standard text-only GGUF loader is insufficient. Real-time performance on iPhone is untested.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-GGUF",
+      "downloadURL": "https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-GGUF/resolve/7d525f883a077e20afb782f2ff618edcae0e39e4/LFM2.5-Audio-1.5B-Q4_0.gguf"
+    },
+    {
+      "id": "whisper-tiny",
+      "name": "Whisper \u00b7 Tiny",
+      "repository": "ggerganov/whisper.cpp",
+      "creator": "OpenAI",
+      "family": "Whisper",
+      "distributor": "ggerganov",
+      "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+      "filename": "ggml-tiny.bin",
+      "bytes": 77691713,
+      "sha256": "be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21",
+      "files": [
+        {
+          "filename": "ggml-tiny.bin",
+          "role": "Speech recognizer",
+          "bytes": 77691713,
+          "sha256": "be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21",
+          "downloadURL": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-tiny.bin"
+        }
+      ],
+      "totalBytes": 77691713,
+      "minimumMemoryGB": 3,
+      "license": "MIT",
+      "licenseURL": "https://huggingface.co/openai/whisper-tiny",
+      "upstreamURL": "https://huggingface.co/openai/whisper-tiny",
+      "tasks": [
+        "Speech recognition"
+      ],
+      "task": "Speech recognition",
+      "format": "GGML",
+      "quantization": "F16",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Multilingual speech-to-text. Transcribes audio; a separate conversation model and voice are needed to answer aloud.",
+      "runtimeNotes": "Requires whisper.cpp or a compatible Whisper runtime. The selected file is GGML, not GGUF. No speaker identity or call transport is provided.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/ggerganov/whisper.cpp",
+      "downloadURL": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-tiny.bin"
+    },
+    {
+      "id": "whisper-base",
+      "name": "Whisper \u00b7 Base",
+      "repository": "ggerganov/whisper.cpp",
+      "creator": "OpenAI",
+      "family": "Whisper",
+      "distributor": "ggerganov",
+      "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+      "filename": "ggml-base.bin",
+      "bytes": 147951465,
+      "sha256": "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe",
+      "files": [
+        {
+          "filename": "ggml-base.bin",
+          "role": "Speech recognizer",
+          "bytes": 147951465,
+          "sha256": "60ed5bc3dd14eea856493d334349b405782ddcaf0028d4b5df4088345fba2efe",
+          "downloadURL": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base.bin"
+        }
+      ],
+      "totalBytes": 147951465,
+      "minimumMemoryGB": 3,
+      "license": "MIT",
+      "licenseURL": "https://huggingface.co/openai/whisper-base",
+      "upstreamURL": "https://huggingface.co/openai/whisper-base",
+      "tasks": [
+        "Speech recognition"
+      ],
+      "task": "Speech recognition",
+      "format": "GGML",
+      "quantization": "F16",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Multilingual speech-to-text. Transcribes audio; a separate conversation model and voice are needed to answer aloud.",
+      "runtimeNotes": "Requires whisper.cpp or a compatible Whisper runtime. The selected file is GGML, not GGUF. No speaker identity or call transport is provided.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/ggerganov/whisper.cpp",
+      "downloadURL": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-base.bin"
+    },
+    {
+      "id": "whisper-small",
+      "name": "Whisper \u00b7 Small",
+      "repository": "ggerganov/whisper.cpp",
+      "creator": "OpenAI",
+      "family": "Whisper",
+      "distributor": "ggerganov",
+      "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+      "filename": "ggml-small.bin",
+      "bytes": 487601967,
+      "sha256": "1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b",
+      "files": [
+        {
+          "filename": "ggml-small.bin",
+          "role": "Speech recognizer",
+          "bytes": 487601967,
+          "sha256": "1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b",
+          "downloadURL": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-small.bin"
+        }
+      ],
+      "totalBytes": 487601967,
+      "minimumMemoryGB": 3,
+      "license": "MIT",
+      "licenseURL": "https://huggingface.co/openai/whisper-small",
+      "upstreamURL": "https://huggingface.co/openai/whisper-small",
+      "tasks": [
+        "Speech recognition"
+      ],
+      "task": "Speech recognition",
+      "format": "GGML",
+      "quantization": "F16",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Multilingual speech-to-text. Transcribes audio; a separate conversation model and voice are needed to answer aloud.",
+      "runtimeNotes": "Requires whisper.cpp or a compatible Whisper runtime. The selected file is GGML, not GGUF. No speaker identity or call transport is provided.",
+      "repositoryBundle": false,
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/ggerganov/whisper.cpp",
+      "downloadURL": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-small.bin"
+    },
+    {
+      "id": "kokoro-82m",
+      "name": "Kokoro \u00b7 82M",
+      "repository": "hexgrad/Kokoro-82M",
+      "creator": "hexgrad",
+      "family": "Kokoro",
+      "distributor": "hexgrad",
+      "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "filename": "kokoro-v1_0.pth",
+      "bytes": 327212226,
+      "sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+      "files": [
+        {
+          "filename": "kokoro-v1_0.pth",
+          "role": "Speech synthesizer",
+          "bytes": 327212226,
+          "sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+          "downloadURL": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/kokoro-v1_0.pth"
+        }
+      ],
+      "totalBytes": 327212226,
+      "minimumMemoryGB": 3,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "upstreamURL": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "tasks": [
+        "Speech synthesis"
+      ],
+      "task": "Speech synthesis",
+      "format": "PyTorch",
+      "quantization": "Published weights",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Compact text-to-speech model. Turns an agent\u2019s written answer into audio; it does not reason or listen.",
+      "runtimeNotes": "Use the publisher\u2019s Kokoro runtime, config, phonemizer, and selected voice files. Listed size is the main checkpoint only; follow repository setup for a complete installation.",
+      "repositoryBundle": true,
+      "deviceClass": "Phone candidates",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "downloadURL": "https://huggingface.co/hexgrad/Kokoro-82M/resolve/f3ff3571791e39611d31c381e3a41a3af07b4987/kokoro-v1_0.pth"
+    },
+    {
+      "id": "qwen3-asr-0.6b",
+      "name": "Qwen 3 ASR \u00b7 0.6B",
+      "repository": "Qwen/Qwen3-ASR-0.6B",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "Qwen",
+      "revision": "5eb144179a02acc5e5ba31e748d22b0cf3e303b0",
+      "filename": "model.safetensors",
+      "bytes": 1876091704,
+      "sha256": "79d6cbd4c98c7bbffe9db2edac07f56cd6637d0d5944b27f6c2b8353840323ea",
+      "files": [
+        {
+          "filename": "model.safetensors",
+          "role": "Speech recognizer",
+          "bytes": 1876091704,
+          "sha256": "79d6cbd4c98c7bbffe9db2edac07f56cd6637d0d5944b27f6c2b8353840323ea",
+          "downloadURL": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B/resolve/5eb144179a02acc5e5ba31e748d22b0cf3e303b0/model.safetensors"
+        }
+      ],
+      "totalBytes": 1876091704,
+      "minimumMemoryGB": 6,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B",
+      "tasks": [
+        "Speech recognition"
+      ],
+      "task": "Speech recognition",
+      "format": "Safetensors",
+      "quantization": "Published weights",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Audio-to-text model for transcription. A component in a voice agent, not a conversational agent by itself.",
+      "runtimeNotes": "Requires Qwen3-ASR runtime, tokenizer, and processor/config files from the repository. Original checkpoint; native iOS integration has not been tested.",
+      "repositoryBundle": true,
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B",
+      "downloadURL": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B/resolve/5eb144179a02acc5e5ba31e748d22b0cf3e303b0/model.safetensors"
+    },
+    {
+      "id": "qwen3-tts-0.6b",
+      "name": "Qwen 3 TTS \u00b7 0.6B",
+      "repository": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+      "creator": "Qwen",
+      "family": "Qwen",
+      "distributor": "Qwen",
+      "revision": "85e237c12c027371202489a0ec509ded67b5e4b5",
+      "filename": "model.safetensors",
+      "bytes": 1811626576,
+      "sha256": "bc3c7e785eb961179c25450d1acff03f839e0002f2f3a5aeb67b5735c0fa2adb",
+      "files": [
+        {
+          "filename": "model.safetensors",
+          "role": "Speech synthesizer",
+          "bytes": 1811626576,
+          "sha256": "bc3c7e785eb961179c25450d1acff03f839e0002f2f3a5aeb67b5735c0fa2adb",
+          "downloadURL": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice/resolve/85e237c12c027371202489a0ec509ded67b5e4b5/model.safetensors"
+        },
+        {
+          "filename": "speech_tokenizer/model.safetensors",
+          "role": "Speech tokenizer",
+          "bytes": 682293092,
+          "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+          "downloadURL": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice/resolve/85e237c12c027371202489a0ec509ded67b5e4b5/speech_tokenizer/model.safetensors"
+        }
+      ],
+      "totalBytes": 2493919668,
+      "minimumMemoryGB": 6,
+      "license": "Apache 2.0",
+      "licenseURL": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+      "upstreamURL": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+      "tasks": [
+        "Speech synthesis"
+      ],
+      "task": "Speech synthesis",
+      "format": "Safetensors",
+      "quantization": "Published weights",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Text-to-speech using preset voices. Generates spoken output; it needs a separate reasoning model for agent work.",
+      "runtimeNotes": "Requires Qwen3-TTS runtime and repository configs/tokenizer assets. Both weight files count toward the displayed size. Native iOS support is untested.",
+      "repositoryBundle": true,
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+      "downloadURL": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice/resolve/85e237c12c027371202489a0ec509ded67b5e4b5/model.safetensors"
+    },
+    {
+      "id": "moshi-mlx-q4",
+      "name": "Moshi \u00b7 MLX 4-bit",
+      "repository": "kyutai/moshiko-mlx-q4",
+      "creator": "Kyutai",
+      "family": "Moshi",
+      "distributor": "kyutai",
+      "revision": "18e4df760a34d5977a34517d7d1580e07acbb2f1",
+      "filename": "model.q4.safetensors",
+      "bytes": 4805545317,
+      "sha256": "7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c",
+      "files": [
+        {
+          "filename": "model.q4.safetensors",
+          "role": "Dialogue model",
+          "bytes": 4805545317,
+          "sha256": "7959d590e23c1ebc78cfa3501344a6ff331561aa0cadc4429b733b890bbc919c",
+          "downloadURL": "https://huggingface.co/kyutai/moshiko-mlx-q4/resolve/18e4df760a34d5977a34517d7d1580e07acbb2f1/model.q4.safetensors"
+        },
+        {
+          "filename": "tokenizer-e351c8d8-checkpoint125.safetensors",
+          "role": "Mimi audio codec",
+          "bytes": 384644900,
+          "sha256": "09b782f0629851a271227fb9d36db65c041790365f11bbe5d3d59369cf863f50",
+          "downloadURL": "https://huggingface.co/kyutai/moshiko-mlx-q4/resolve/18e4df760a34d5977a34517d7d1580e07acbb2f1/tokenizer-e351c8d8-checkpoint125.safetensors"
+        },
+        {
+          "filename": "tokenizer_spm_32k_3.model",
+          "role": "Text tokenizer",
+          "bytes": 552778,
+          "sha256": "78d4336533ddc26f9acf7250d7fb83492152196c6ea4212c841df76933f18d2d",
+          "downloadURL": "https://huggingface.co/kyutai/moshiko-mlx-q4/resolve/18e4df760a34d5977a34517d7d1580e07acbb2f1/tokenizer_spm_32k_3.model"
+        }
+      ],
+      "totalBytes": 5190742995,
+      "minimumMemoryGB": 16,
+      "license": "CC BY 4.0",
+      "licenseURL": "https://huggingface.co/kyutai/moshiko-mlx-q4",
+      "upstreamURL": "https://huggingface.co/kyutai/moshiko-mlx-q4",
+      "tasks": [
+        "Speech conversation"
+      ],
+      "task": "Speech conversation",
+      "format": "MLX",
+      "quantization": "4-bit",
+      "ami": false,
+      "validation": "Explore",
+      "status": "Not tested in AMI",
+      "description": "Full-duplex speech research model for Apple Silicon Macs. Publisher notes limited complex-task ability and no tool access.",
+      "runtimeNotes": "Requires moshi_mlx and repository setup. Research candidate, not an iPhone-ready work agent. Full-duplex describes its audio behavior, not multiplayer calling support.",
+      "repositoryBundle": true,
+      "deviceClass": "Laptop & desktop",
+      "addedAt": "2026-10-05",
+      "sourceURL": "https://huggingface.co/kyutai/moshiko-mlx-q4",
+      "downloadURL": "https://huggingface.co/kyutai/moshiko-mlx-q4/resolve/18e4df760a34d5977a34517d7d1580e07acbb2f1/model.q4.safetensors"
+    }
+  ]
+}

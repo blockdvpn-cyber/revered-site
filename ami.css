@@ -1,0 +1,251 @@
+/* AMI's pages (Personal, Business, Student). Colors and type come from site.css; this is layout and the visuals. */
+.page[hidden] { display: none; }
+#ami-page { --wrap: 1180px; }
+#ami-page section { padding-left: max(24px, calc((100% - var(--wrap)) / 2)); padding-right: max(24px, calc((100% - var(--wrap)) / 2)); }
+/* Resets at zero specificity, so every component's own spacing and color win. */
+:where(#ami-page) :where(h1, h2, h3, h4, p, blockquote) { margin: 0; }
+:where(#ami-page) :where(a) { color: inherit; }
+#ami-page :where(h1, h2, h3) { font-family: 'Inter Tight', Inter, sans-serif; color: var(--ink); text-wrap: balance; }
+#ami-page .label { font: 600 12px/1 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); margin: 0 0 18px; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 46px; white-space: nowrap; padding: 0 22px; border-radius: 999px; font: 600 15px/1 Inter, sans-serif; text-decoration: none; transition: transform .15s, background .15s, border-color .15s; }
+.button.primary { background: var(--ink); color: var(--on-ink); }
+.button.primary:hover { transform: translateY(-1px); }
+.button.quiet { border: 1px solid var(--line-strong); color: var(--ink); }
+.button.quiet:hover { border-color: var(--faint); }
+
+/* Hero. */
+.ami-hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr); gap: 64px; align-items: center; padding-top: 72px; padding-bottom: 88px; }
+.ami-hero h1 { font-size: clamp(42px, 5.2vw, 70px); font-weight: 600; line-height: 1.12; letter-spacing: -.03em; }
+.ami-hero .intro { font-size: 19px; line-height: 1.6; color: var(--muted); max-width: 33em; margin-top: 24px; }
+.ami-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+.ami-note { margin-top: 20px; font-size: 14px; color: var(--faint); }
+.ami-note .email { color: var(--ink); user-select: all; }
+
+/* Features: one idea each, with the product itself beside it. */
+.ami-features { padding-top: 24px; padding-bottom: 40px; display: grid; gap: 24px; }
+.feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; align-items: center; padding: 56px 0; border-top: 1px solid var(--line); }
+.feature:nth-child(even) .feature-copy { order: 2; }
+.feature h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 600; line-height: 1.18; letter-spacing: -.02em; }
+.feature .feature-copy p { margin-top: 16px; font-size: 17px; line-height: 1.65; color: var(--muted); max-width: 30em; }
+.visual { border: 1px solid var(--line); border-radius: 24px; background: var(--surface); padding: 28px; min-height: 260px; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+
+/* Visual: a deal answer. */
+.deal h4 { margin: 0 0 6px; font: 600 15px/1.3 Inter, sans-serif; }
+.deal .row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 12px; padding: 12px 14px; border-radius: 14px; font-size: 15px; }
+.deal .row.best { background: var(--raise); box-shadow: inset 0 0 0 1px var(--line); }
+.deal .row small { display: block; color: var(--faint); font-size: 13px; }
+.deal .price { font: 600 17px/1 'Inter Tight', Inter, sans-serif; font-variant-numeric: tabular-nums; }
+.deal .tag { display: inline-block; margin-left: 8px; padding: 3px 8px; border-radius: 999px; font: 600 11px/1.2 Inter, sans-serif; letter-spacing: .02em; color: var(--good); background: color-mix(in srgb, var(--good) 14%, transparent); }
+.deal .foot { margin-top: 4px; font-size: 13px; color: var(--faint); }
+
+/* Visual: the call bar and what AMI says. */
+.callbar { display: flex; align-items: center; gap: 12px; padding: 8px 8px 8px 14px; border-radius: 999px; background: #161618; color: #fff; box-shadow: 0 18px 40px rgba(0,0,0,.25); }
+.callbar .face { width: 36px; height: 36px; flex-shrink: 0; }
+.callbar .bars { flex: 1; display: flex; align-items: center; gap: 3px; height: 30px; overflow: hidden; }
+.callbar .bars span { width: 3px; border-radius: 2px; background: #fff; animation: talk 1.2s ease-in-out infinite; }
+.callbar .round { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.1); flex-shrink: 0; }
+.callbar .round.end { background: #ff453a; }
+.callbar .round svg { width: 18px; height: 18px; fill: none; stroke: #fff; stroke-width: 2.4; stroke-linecap: round; }
+.said { margin-top: 18px; padding: 14px 16px; border-radius: 18px; background: var(--raise); font-size: 15px; line-height: 1.5; }
+.said.you { margin-left: auto; max-width: 80%; background: #0a84ff; color: #fff; }
+@keyframes talk { 0%, 100% { height: 4px; } 50% { height: var(--h, 22px); } }
+
+/* Visual: agents and groups. */
+.agent { display: flex; align-items: center; gap: 14px; padding: 12px 14px; border-radius: 16px; }
+.agent + .agent { border-top: 1px solid var(--line); border-radius: 0; }
+.agent .dot { width: 40px; height: 40px; flex-shrink: 0; position: relative; }
+.agent .dot.group .blobatar { position: absolute; width: 28px; height: 28px; }
+.agent .dot.group .blobatar:first-child { left: 0; top: 0; }
+.agent .dot.group .blobatar:last-child { right: 0; bottom: 0; }
+
+/* AMI's companions: the app's shapes, blinking now and then. */
+.blobatar { display: block; width: 100%; height: 100%; overflow: visible; }
+.blobatar .eyes { transform-origin: 50px 50px; animation: blobblink 4.7s infinite; }
+@keyframes blobblink { 0%, 96.5%, 100% { transform: scaleY(1); } 98% { transform: scaleY(.18); } }
+.agent b { display: block; font-weight: 600; font-size: 15px; }
+.agent small { color: var(--faint); font-size: 13px; }
+
+/* Visual: facts the company knows. */
+.fact { display: grid; grid-template-columns: 22px 1fr; gap: 12px; align-items: start; padding: 11px 4px; font-size: 15px; }
+.fact + .fact { border-top: 1px solid var(--line); }
+.fact svg { width: 18px; height: 18px; margin-top: 2px; fill: none; stroke: var(--faint); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.fact small { display: block; color: var(--faint); font-size: 13px; }
+
+/* Visual: fixes needed, falling as the model learns. */
+.chart { display: grid; grid-template-columns: repeat(8, 1fr); align-items: end; gap: 10px; height: 150px; padding: 8px 4px 0; border-bottom: 1px solid var(--line); }
+.chart span { border-radius: 6px 6px 2px 2px; background: color-mix(in srgb, var(--accent) 70%, transparent); }
+.chart-key { display: flex; justify-content: space-between; font-size: 13px; color: var(--faint); font-variant-numeric: tabular-nums; }
+.approved { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+.approved span { padding: 6px 10px; border-radius: 999px; font-size: 13px; background: var(--raise); color: var(--muted); }
+
+/* Visual: who sees what. */
+.roles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.role { padding: 16px; border-radius: 16px; background: var(--raise); }
+.role b { display: block; font: 600 15px/1.2 Inter, sans-serif; margin-bottom: 10px; }
+.role span { display: block; font-size: 14px; color: var(--muted); padding: 4px 0; }
+.role span.no { color: var(--faint); text-decoration: line-through; }
+
+/* Visual: what's due. */
+.due { display: grid; grid-template-columns: 64px 1fr; gap: 12px; align-items: baseline; padding: 12px 4px; font-size: 15px; }
+.due + .due { border-top: 1px solid var(--line); }
+.due time { font: 600 13px/1 Inter, sans-serif; color: var(--faint); text-transform: uppercase; letter-spacing: .04em; }
+.due small { display: block; color: var(--faint); font-size: 13px; }
+
+/* What works today, and what's next: one honest list. */
+.ami-status { padding-top: 72px; padding-bottom: 72px; border-top: 1px solid var(--line); }
+.ami-status h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 600; letter-spacing: -.025em; margin-bottom: 40px; }
+.status-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 32px; }
+.status-grid .head { font: 600 13px/1 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); margin: 0; padding-bottom: 18px; }
+.status-grid .head.today { grid-column: 1 / 3; }
+.status-grid .slot { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-content: start; padding-bottom: 18px; font-size: 15px; line-height: 1.45; }
+.status-grid .slot svg { width: 18px; height: 18px; margin-top: 2px; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.status-grid .slot.today svg { stroke: var(--good); }
+.status-grid .slot.next svg { stroke: var(--faint); }
+.status-grid .slot small { display: block; color: var(--faint); font-size: 13px; margin-top: 2px; }
+/* "| Next": one unbroken line down the left of the plans. */
+.status-grid .next { border-left: 1px solid var(--line-strong); padding-left: 32px; }
+
+/* Private by design. */
+.ami-private { padding-top: 72px; padding-bottom: 72px; border-top: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 64px; }
+.ami-private h2 { font-size: clamp(32px, 3.6vw, 48px); font-weight: 600; line-height: 1.16; letter-spacing: -.025em; }
+.ami-private-points { display: grid; gap: 28px; }
+.ami-private-points h3 { font: 600 17px/1.3 Inter, sans-serif; margin-bottom: 6px; }
+.ami-private-points p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+/* The motto, given room. */
+#ami-page .motto { padding-top: 96px; padding-bottom: 96px; border-top: 1px solid var(--line); text-align: center; }
+#ami-page .motto blockquote { margin: 0 auto; max-width: 20em; font: italic 400 clamp(32px, 4.2vw, 56px)/1.15 'Instrument Serif', Georgia, serif; letter-spacing: -.01em; color: var(--ink); text-wrap: balance; }
+#ami-page .motto cite { display: block; margin-top: 20px; font: 500 13px/1 Inter, sans-serif; font-style: normal; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+
+/* Bridge to the model library. */
+.ami-models { padding-top: 64px; padding-bottom: 64px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+.ami-models h2 { font-size: clamp(26px, 2.6vw, 34px); font-weight: 600; letter-spacing: -.02em; }
+.ami-models p { margin-top: 10px; color: var(--muted); font-size: 16px; max-width: 34em; }
+
+@media (max-width: 900px) {
+  .ami-hero, .feature, .ami-private { grid-template-columns: 1fr; gap: 36px; }
+  /* One list on a phone: what works, then what's next. */
+  .status-grid { grid-template-columns: 1fr; }
+  .status-grid .head.today { grid-column: auto; order: 0; }
+  .status-grid .slot.today { order: 1; }
+  .status-grid .head.next { order: 2; border-left: 0; padding-left: 0; border-top: 1px solid var(--line-strong); padding-top: 28px; margin-top: 10px; }
+  .status-grid .slot.next { order: 3; border-left: 0; padding-left: 0; }
+  .status-grid .slot.empty { display: none; }
+  .feature:nth-child(even) .feature-copy { order: 0; }
+  .ami-hero { padding-top: 40px; padding-bottom: 56px; }
+  .feature { padding: 40px 0; }
+  .ami-models { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 560px) {
+  #ami-page section { padding-left: 16px; padding-right: 16px; }
+  .ami-hero .intro { font-size: 17px; }
+  .visual { padding: 18px; border-radius: 20px; }
+  .roles { grid-template-columns: 1fr; }
+  .ami-actions { flex-direction: column; }
+  .ami-actions .button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { .callbar .bars span { animation: none; height: var(--h, 12px); } }
+
+/* The phone: an iPhone 17 Pro in the app's own dark UI. */
+/* Frame like Xcode's iPhone 17 Pro: a black body, a thin graphite rim, dark side buttons. */
+.phone{justify-self:center;position:relative;width:min(300px,100%);max-width:100%;aspect-ratio:393/852;border-radius:16.5% / 7.6%;padding:3%;background:#000;
+  box-shadow:0 0 0 1.5px #6e6e73,0 0 0 3px #1c1c1e,0 0 0 3.6px #48484a,0 40px 80px #00000040,0 10px 24px #0000002e}
+.phone-button{position:absolute;width:3px;background:#2c2c2e;box-shadow:inset 0 0 0 1px #5a5a5e;border-radius:2px}
+.phone-button.action{left:-6px;top:17%;height:4.5%}
+.phone-button.volume-up{left:-6px;top:24.5%;height:8%}
+.phone-button.volume-down{left:-6px;top:34%;height:8%}
+.phone-button.power{right:-6px;top:27%;height:12%}
+.phone-screen{position:relative;height:100%;border-radius:13.6% / 6.3%;background:#050505;display:flex;flex-direction:column;overflow:hidden;color:#f1f1f2;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','DM Sans',sans-serif}
+.status-bar{position:relative;display:flex;align-items:center;justify-content:space-between;height:46px;padding:2px 22px 0 30px;flex-shrink:0}
+.clock{font-size:14px;font-weight:600;letter-spacing:-.2px;width:54px}
+.island{position:absolute;left:50%;top:10px;transform:translateX(-50%);width:31%;height:27px;border-radius:99px;background:#000;box-shadow:inset 3px 0 5px #ffffff08}
+.status-icons{display:flex;align-items:center;gap:5px;width:70px;justify-content:flex-end}
+.status-icons svg{height:10px;fill:#f1f1f2}
+.battery{position:relative;width:22px;height:11px;border-radius:3.5px;border:1px solid #f1f1f280;padding:1px}
+.battery::after{content:"";position:absolute;right:-3px;top:3px;width:1.5px;height:4px;border-radius:0 1px 1px 0;background:#f1f1f280}
+.battery i{display:block;height:100%;width:78%;border-radius:2px;background:#f1f1f2}
+.app-bar{display:flex;justify-content:space-between;align-items:center;padding:4px 14px 0;flex-shrink:0}
+.app-circle{width:32px;height:32px;border-radius:50%;background:#ffffff14;box-shadow:inset 0 0 0 1px #ffffff1a;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:4px;padding-left:9px}
+.app-circle b{display:block;height:1.6px;border-radius:2px;background:#f1f1f2;width:13px}.app-circle b+b{width:8px}
+.app-pill{font-size:10px;font-weight:600;padding:9px 12px;border-radius:99px;background:#ffffff14;box-shadow:inset 0 0 0 1px #ffffff1a}
+.phone-head{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:-30px;padding-bottom:6px}
+.blob{width:48px;height:48px;padding:5px;border-radius:50%;background:#ebebed;box-shadow:0 6px 14px rgba(0,0,0,.35)}
+.phone-name{font-size:11px;font-weight:600;padding:4px 11px;border-radius:99px;background:#ffffff14}
+.phone-chat{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:10px 12px;overflow:hidden}
+.bubble{margin:0;font-size:11.5px;line-height:1.42;padding:8px 11px;border-radius:15px;max-width:84%;opacity:0;transform:translateY(8px);animation:arrive .45s var(--delay) forwards}
+.bubble.you{align-self:flex-end;background:#0a84ff;color:#fff}
+.bubble.ami{align-self:flex-start;background:#1f1f22}
+.bubble.progress{color:#b9b9be}
+.phone-composer{display:flex;align-items:center;gap:7px;margin:4px 10px 6px;flex-shrink:0}
+.phone-composer .plus{width:28px;height:28px;border-radius:50%;background:#ffffff14;box-shadow:inset 0 0 0 1px #ffffff1a;display:grid;place-items:center;font-size:16px;color:#f1f1f2;flex-shrink:0}
+.phone-composer .field{flex:1;display:flex;align-items:center;justify-content:space-between;height:30px;padding:0 6px 0 12px;border-radius:15px;background:#ffffff12;font-size:11px;color:#8d8d93}
+.phone-composer b{background:#0a84ff;color:#fff;border-radius:99px;padding:2px 9px;font-size:11px}
+.home-indicator{display:block;width:36%;height:4.5px;border-radius:99px;background:#f1f1f2d9;margin:8px auto 7px;flex-shrink:0}
+@keyframes arrive{to{opacity:1;transform:none}}
+@keyframes blink{0%,96%,100%{transform:scaleY(1)}98%{transform:scaleY(.15)}}
+@media(prefers-reduced-motion:reduce){.bubble{animation:none;opacity:1;transform:none}.blobatar .eyes{animation:none}}
+@media(max-width:600px){.phone{width:min(260px,100%)}}
+
+/* The live team workspace (Business). */
+.team-live { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 56px; align-items: start; padding-top: 24px; padding-bottom: 72px; }
+.tl-copy h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 600; line-height: 1.18; letter-spacing: -.02em; }
+.tl-copy > p { margin-top: 16px; font-size: 17px; line-height: 1.65; color: var(--muted); max-width: 30em; }
+.tl-agents { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 14px; }
+.tl-agents li { display: flex; align-items: center; gap: 12px; }
+.tl-agents .blobatar { width: 34px; height: 34px; flex: none; }
+.tl-agents b { display: block; font-weight: 600; color: var(--ink); }
+.tl-agents small { color: var(--faint); font-size: 14px; }
+.tl-copy .tl-fine { margin-top: 28px; font-size: 13px; color: var(--faint); }
+.tl-panel { display: flex; flex-direction: column; height: 600px; border: 1px solid var(--line); border-radius: 24px; background: var(--surface); overflow: hidden; }
+.tl-head { display: flex; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.tl-head > span:first-child { font: 600 15px/1 'Inter Tight', Inter, sans-serif; color: var(--ink); }
+.tl-status { flex: 1; font-size: 12px; color: var(--faint); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tl-panel button { font: inherit; cursor: pointer; }
+.tl-clear { border: 1px solid var(--line-strong); background: none; color: var(--muted); border-radius: 999px; padding: 5px 12px; font-size: 12px !important; }
+.tl-list { flex: 1; overflow-y: auto; padding: 8px 20px 12px; overscroll-behavior: contain; }
+.tl-thread { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.tl-thread:last-child { border-bottom: 0; }
+.tl-post { display: flex; gap: 12px; padding: 6px 0; }
+.tl-reply { margin-left: 44px; }
+.tl-avatar { flex: none; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; }
+.tl-avatar.person { background: var(--raise); border: 1px solid var(--line); color: var(--ink); font: 600 13px/1 Inter, sans-serif; }
+.tl-avatar .blobatar { width: 30px; height: 30px; }
+.tl-main { min-width: 0; flex: 1; }
+.tl-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink); }
+.tl-meta time { font-size: 12px; color: var(--faint); font-variant-numeric: tabular-nums; }
+.tl-badge { font: 600 10px/1 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line-strong); border-radius: 999px; padding: 3px 6px; }
+.tl-text { margin-top: 3px !important; font-size: 15px; line-height: 1.55; color: var(--ink); overflow-wrap: anywhere; }
+.tl-at { font-weight: 600; color: var(--accent); }
+.tl-working { margin-top: 6px !important; font-size: 14px; color: var(--faint); display: flex; align-items: center; gap: 4px; }
+.tl-working i { width: 5px; height: 5px; border-radius: 50%; background: currentColor; animation: tl-dot 1.2s infinite ease-in-out; }
+.tl-working i:nth-child(2) { animation-delay: .15s; } .tl-working i:nth-child(3) { animation-delay: .3s; margin-right: 6px; }
+@keyframes tl-dot { 0%, 80%, 100% { opacity: .25; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-2px); } }
+.tl-approve { margin-top: 10px; padding: 14px; border: 1px solid var(--line-strong); border-radius: 14px; background: var(--raise); max-width: 440px; }
+.tl-approve-label { font: 600 11px/1 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); }
+.tl-approve p { margin-top: 8px !important; font-size: 14px; line-height: 1.5; color: var(--ink); }
+.tl-approve-actions { display: flex; gap: 8px; margin-top: 12px; }
+.tl-approve-actions button { height: 34px; padding: 0 16px; border-radius: 999px; border: 0; background: var(--ink); color: var(--on-ink); font-weight: 600 !important; font-size: 14px !important; }
+.tl-approve-actions button.quiet { background: none; color: var(--ink); border: 1px solid var(--line-strong); }
+.tl-settled { display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 600; }
+.tl-settled.yes { color: var(--good); } .tl-settled.no { color: var(--muted); }
+.tl-reply-btn { margin: 4px 0 0 44px; padding: 0; border: 0; background: none; color: var(--faint); font-size: 13px !important; }
+.tl-reply-btn:hover { color: var(--ink); }
+.tl-empty { padding: 24px 0; display: grid; gap: 10px; justify-items: start; }
+.tl-empty p { color: var(--muted); font-size: 15px; }
+.tl-starter { text-align: left; border: 1px solid var(--line-strong); background: none; color: var(--ink); border-radius: 14px; padding: 10px 14px; font-size: 14px !important; }
+.tl-starter:hover { background: var(--raise); }
+.tl-replying { display: flex; justify-content: space-between; padding: 8px 20px 0; font-size: 13px; color: var(--muted); }
+.tl-replying button { border: 0; background: none; color: var(--muted); font-size: 13px !important; }
+.tl-suggest { display: flex; gap: 6px; padding: 8px 20px 0; flex-wrap: wrap; }
+.tl-suggest button { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line-strong); background: var(--raise); color: var(--ink); border-radius: 999px; padding: 4px 12px 4px 5px; font-size: 13px !important; }
+.tl-suggest .blobatar { width: 20px; height: 20px; }
+.tl-composer { display: flex; gap: 8px; margin: 12px 16px 16px; padding: 6px 6px 6px 16px; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--bg); }
+.tl-composer input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; color: var(--ink); font: 400 15px/1.4 Inter, sans-serif; }
+.tl-composer button { width: 36px; height: 36px; flex: none; border-radius: 50%; border: 0; background: var(--ink); color: var(--on-ink); font-size: 17px !important; font-weight: 600 !important; }
+@media (max-width: 860px) {
+  .team-live { grid-template-columns: 1fr; gap: 32px; }
+  .tl-panel { height: 560px; }
+  .tl-reply { margin-left: 24px; }
+  .tl-reply-btn { margin-left: 44px; }
+}
+.team-live [hidden] { display: none !important; }
