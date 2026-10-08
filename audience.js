@@ -158,7 +158,7 @@
   }
 
   // The live team demo needs Claude's runtime (shared posts, agents); a plain web host shows the rest of the page.
-  const liveDemo = !location.hostname.endsWith('github.io');
+  const liveDemo = !/(github\.io|revered\.dev)$/.test(location.hostname);
   function render(name) {
     const page = pages[name];
     const live = name === 'business' && liveDemo;
