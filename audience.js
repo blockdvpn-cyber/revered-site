@@ -157,8 +157,11 @@
     return `<div class="status-grid">${cells}</div>`;
   }
 
+  // The live team demo needs Claude's runtime (shared posts, agents); a plain web host shows the rest of the page.
+  const liveDemo = !location.hostname.endsWith('github.io');
   function render(name) {
     const page = pages[name];
+    const live = name === 'business' && liveDemo;
     const bubbles = page.chat.map(([who, words, kind], index) =>
       `<p class="bubble ${who}${kind ? ' ' + kind : ''}" style="--delay:${0.4 + index * 1.1}s">${lines(words)}</p>`).join('');
     document.getElementById('ami-page').innerHTML = `
@@ -169,7 +172,7 @@
           <p class="intro">${text(page.intro)}</p>
           <div class="ami-actions">
             <a class="button primary" href="${page.cta ? page.cta[1] : 'mailto:ami@revered.dev?subject=AMI%20private%20beta'}">${page.cta ? text(page.cta[0]) : 'Join the private beta'}</a>
-            <a class="button quiet" href="#${name === 'business' ? 'team-live' : 'how-it-works'}" data-scroll="${name === 'business' ? 'team-live' : 'how-it-works'}">${name === 'business' ? 'Try it live' : 'See how it works'}</a>
+            <a class="button quiet" href="#${live ? 'team-live' : 'how-it-works'}" data-scroll="${live ? 'team-live' : 'how-it-works'}">${live ? 'Try it live' : 'See how it works'}</a>
           </div>
           <p class="ami-note">${page.note ? text(page.note) : 'For iPhone and Mac · Free on your own devices · Beta invites at <span class="email">ami@revered.dev</span>'}</p>
         </div>
@@ -185,7 +188,7 @@
           </div>
         </div>
       </section>
-      ${name === 'business' ? '<section class="team-live" id="team-live"></section>' : ''}
+      ${live ? '<section class="team-live" id="team-live"></section>' : ''}
       <section class="ami-features" id="how-it-works">
         ${page.features.map(([visual, title, body]) => `<article class="feature">
           <div class="feature-copy"><h2>${text(title)}</h2><p>${text(body)}</p></div>
@@ -208,8 +211,8 @@
         <div><h2>Choose the mind behind AMI.</h2><p>Every model AMI runs is open-weight and credited to its creators. Browse them, compare them, and pick one for each agent.</p></div>
         <a class="button quiet" href="#dev">Explore the model library</a>
       </section>`;
-    const live = document.getElementById('team-live');
-    if (live && window.mountTeamLive) window.mountTeamLive(live);
+    const panel = document.getElementById('team-live');
+    if (panel && window.mountTeamLive) window.mountTeamLive(panel);
     document.querySelectorAll('[data-scroll]').forEach(link => link.onclick = event => {
       event.preventDefault();
       document.getElementById(link.dataset.scroll).scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
